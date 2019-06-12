@@ -1,10 +1,10 @@
 # NotesApp
 
-Remember: node_modules not saved to git. 
-
-### User Stories
+Remember: node_modules not saved to git.
 
 An app for storing and viewing notes, designed as a front end single page web app using Javascript.
+
+### User Stories
 
 ```As a programmer
 I can see a list of my notes, where each note is abbreviated to the first 20 characters
