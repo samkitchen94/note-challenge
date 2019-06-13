@@ -8,8 +8,8 @@ function NoteController(noteList) {
   this.htmlNote = "";
 };
 
-NoteController.prototype.addNoteToList = function() {
-  var newNote = this.noteList.create("Favourite drink: seltzer")
+NoteController.prototype.addNoteToList = function(note) {
+  var newNote = this.noteList.create(note)
   return this.noteList.addNote(newNote)
 };
 
