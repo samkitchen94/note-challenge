@@ -6,11 +6,10 @@ describe("Note list view", function() {
     assert(noteListView.noteList, noteList)
   });
 
-  it("returns a string of html that represents the note list model", function(){
-    var note = noteList.create('Drinks note');
-    var note2 = noteList.create('hello');
+  it("only shows first 20 characters of a note", function(){
+    var note = noteList.create('A very very very long note');
     noteList.addNote(note);
-    noteList.addNote(note2);
-    assert(noteListView.view(), '<ul><li><div>Drinks note</div></li><li><div>hello</div></li></ul>')
+    console.log(noteList.notes)
+    assert(noteListView.view(), "<ul><li><div>A very very very lon</div></li></ul>" )
   });
 });

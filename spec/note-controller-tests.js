@@ -10,6 +10,6 @@ describe("Note controller", function(){
     controller.addNoteToList("Favourite drink: seltzer");
     controller.createView();
     controller.pushToApp();
-    assert(document.getElementById('app').innerHTML, "<ul><li><div>Favourite drink: seltzer</div></li></ul>")
+    assert(document.getElementById('app').innerHTML, "<ul><li><div>Favourite drink: sel</div></li></ul>")
   });
 });
