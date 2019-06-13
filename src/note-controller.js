@@ -2,7 +2,7 @@
 
 function NoteController(noteList) {
   this.noteList = noteList;
-  this.htmlNote = "";
+  this.htmlNote = '';
 };
 
 NoteController.prototype.addNoteToList = function(note) {
